@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leme Pub - O lugar da galera</title>
+    <link rel="stylesheet" href="leme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#home"><img src="imgs/leme.png" alt="Logo Leme Convenience Store" style="height:48px; display:block;"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="slide-content">
+                        <h1 class="hero-title">LEME </h1>
+                        <p class="hero-subtitle">Onde a galera se encontra!</p>
+                        <div class="hero-buttons">
+                            <a href="#localizacao" class="btn btn-primary">Como Chegar</a>
+                            <a href="#contato" class="btn btn-secondary">Fale Conosco</a>
+                        </div>
+                    </div>
+                    <div class="slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imgs/img2.png')"></div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imgs/img3.png')"></div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imgs/img4.png')"></div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imgs/img5.png')"></div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização Section -->
+    <section id="localizacao" class="localizacao">
+        <div class="container">
+            <h2>Onde nos encontrar</h2>
+            <div class="localizacao-content">
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.261738929626!2d-51.14514912449481!3d-29.770072318607383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951969f7b208f2a3%3A0x1d6e00016ecf1f05!2sLeme%20Convenience%20Store!5e0!3m2!1spt-BR!2sbr!4v1751510754675!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="localizacao-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>rua jose bonifacio 1119 - centro</p>
+                            <p>São Leopoldo, RS</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Terça a Domingo: 19h - 02h</p>
+                            <p>Segunda: Fechado</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h4>Como Chegar</h4>
+                            <p>Metrô: Ao lado da estação São Leopoldo	</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <p class="contato-descricao">Siga-nos nas redes sociais e fique por dentro de tudo que rola no Leme!</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/lemeconveniencia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>@lemeconveniencia</span>
+                        </a>
+                        <a href="https://wa.me/5511999999999" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </a>
+                    </div>
+                    <div class="contato-horario">
+                        <h3>Horário de Funcionamento</h3>
+                        <p><strong>Terça a Domingo:</strong> 19h - 02h</p>
+                        <p><strong>Segunda:</strong> Fechado</p>
+                    </div>
+                </div>
+                <div class="contato-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Fotos do Ambiente</p>
+                        <small>Siga no Instagram para ver mais</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>LEME PUB</h3>
+                    <p>O lugar da galera desde 2020</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>rua jose bonifacio 1119 - centro</p>
+                    <p>São Leopoldo, RS</p>
+                    <p>contato@lemepub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Leme Pub. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante voltar ao topo -->
+    <button id="btn-top" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="leme.js"></script>
+</body>
+</html>
